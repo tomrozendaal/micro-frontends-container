@@ -1,7 +1,10 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import { Container, Navbar, Nav } from 'react-bootstrap'
+import MicroFrontend from './Microfrontend'
 import './App.css'
+
+const Browse = ({ history }) => <MicroFrontend history={history} host="http://localhost:5002/main.js" name="Browse" />
 
 function App() {
   return (
@@ -25,7 +28,7 @@ function App() {
 
       <Container>
         <Switch>
-          <Route path="/" exact component={Nav} />
+          <Route path="/" exact component={Browse} />
         </Switch>
       </Container>
 
