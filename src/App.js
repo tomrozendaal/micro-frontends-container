@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Switch, Route } from 'react-router-dom'
+import { Container, Navbar, Nav } from 'react-bootstrap'
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <React.Fragment>
+      <Navbar bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand href="/">
+            <span role="img" aria-label="books">
+              🍿
+            </span>{' '}
+            Movies
+          </Navbar.Brand>
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
+              <Nav.Link href="/">Overview</Nav.Link>
+              <Nav.Link href="/new">New movie</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+
+      <Container>
+        <Switch>
+          <Route path="/" exact component={Nav} />
+        </Switch>
+      </Container>
+
+      <footer>
+        <Container>
+          <p>Footer</p>
+        </Container>
+      </footer>
+    </React.Fragment>
+  )
 }
 
-export default App;
+export default App
