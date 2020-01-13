@@ -6,6 +6,7 @@ import MicroFrontend from './Microfrontend'
 import './App.css'
 
 const Browse = ({ history }) => <MicroFrontend history={history} host="http://localhost:5002" name="Browse" />
+const Movie = ({ history }) => <MicroFrontend history={history} host="http://localhost:5003" name="Movie" />
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <Container>
         <Switch>
           <Route path="/" exact component={Browse} />
+          <Route path="/movie/:id" component={Movie} />
         </Switch>
       </Container>
 
