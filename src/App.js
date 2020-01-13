@@ -5,7 +5,7 @@ import MicroFrontend from './Microfrontend'
 
 import './App.css'
 
-const Browse = ({ history }) => <MicroFrontend history={history} host="http://localhost:5002/main.js" name="Browse" />
+const Browse = ({ history }) => <MicroFrontend history={history} host="http://localhost:5002" name="Browse" />
 
 function App() {
   return (
