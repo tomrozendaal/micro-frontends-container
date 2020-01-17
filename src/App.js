@@ -37,7 +37,7 @@ function App() {
 
       <footer>
         <Container>
-          <p>Footer</p>
+          <span>Footer</span>
         </Container>
       </footer>
     </React.Fragment>
