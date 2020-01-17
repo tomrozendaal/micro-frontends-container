@@ -29,8 +29,8 @@ class MicroFrontend extends React.Component {
   }
 
   renderMicroFrontend = () => {
-    const { name, history } = this.props
-    window[`render${name}`](`${name}-container`, history)
+    const { name, history, match } = this.props
+    window[`render${name}`](`${name}-container`, { ...history, match })
   }
 
   render() {

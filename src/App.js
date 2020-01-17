@@ -5,8 +5,12 @@ import MicroFrontend from './Microfrontend'
 
 import './App.css'
 
-const Browse = ({ history }) => <MicroFrontend history={history} host="http://localhost:5002" name="Browse" />
-const Movie = ({ history }) => <MicroFrontend history={history} host="http://localhost:5003" name="Movie" />
+const Browse = ({ history, match }) => (
+  <MicroFrontend host="http://localhost:5002" name="Browse" match={match} history={history} />
+)
+const Movie = ({ history, match }) => (
+  <MicroFrontend host="http://localhost:5003" name="Movie" match={match} history={history} />
+)
 
 function App() {
   return (
