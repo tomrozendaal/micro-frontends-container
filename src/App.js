@@ -17,12 +17,11 @@ function App() {
             <span role="img" aria-label="books">
               🍿
             </span>{' '}
-            Movies
+            Movie trailers
           </Navbar.Brand>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="/">Overview</Nav.Link>
-              <Nav.Link href="/new">New movie</Nav.Link>
+              <Nav.Link href="/">Browse</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
