@@ -1,3 +1,4 @@
-Enable CORS
+# Container
 
-yarn start
+## How to run
+`yarn start`
