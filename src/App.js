@@ -1,6 +1,6 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import { Container, Navbar, Nav } from 'react-bootstrap'
+import { Container, Navbar, Nav, Row, Col } from 'react-bootstrap'
 import MicroFrontend from './Microfrontend'
 
 import './App.css'
@@ -40,7 +40,14 @@ function App() {
 
       <footer>
         <Container>
-          <span>Footer</span>
+          <Row>
+            <Col xs={7}>
+              <span>© Movie Trailers</span>
+            </Col>
+            <Col xs={5}>
+              <mf-customer-service></mf-customer-service>
+            </Col>
+          </Row>
         </Container>
       </footer>
     </React.Fragment>

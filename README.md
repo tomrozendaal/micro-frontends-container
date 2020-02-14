@@ -1,4 +1,8 @@
 # Container
 
 ## How to run
-`yarn start`
+
+```
+yarn install
+yarn start
+```
