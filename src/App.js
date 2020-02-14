@@ -44,9 +44,6 @@ function App() {
             <Col xs={7}>
               <span>© Movie Trailers</span>
             </Col>
-            <Col xs={5}>
-              <mf-customer-service></mf-customer-service>
-            </Col>
           </Row>
         </Container>
       </footer>
